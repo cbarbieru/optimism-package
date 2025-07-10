@@ -1,7 +1,7 @@
 optimism_package:
   chains:
     - participants:
-      - el_type: op-geth
+      - el_type: op-erigon              # ✅ Sequencer node using op-erigon
         el_log_level: ""
         el_extra_env_vars: {}
         el_extra_labels: {}
@@ -26,7 +26,7 @@ optimism_package:
         node_selectors: {}
         tolerations: []
         count: 1
-      - el_type: op-reth
+      - el_type: op-rbuilder            # ✅ Secondary node using op-rbuilder
         cl_type: op-node
       network_params:
         network: "kurtosis"
